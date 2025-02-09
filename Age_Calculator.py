@@ -37,8 +37,8 @@ day = day + localtime.tm_mday
 
 if(int(lis[1]) < 12 ):
     for m in range(int(lis[1]) + 1, 12+1):
-        day = day + month_days(i , isleap(int(lis[2])))
-day = day + (month_days(i , isleap(int(lis[2]))) - int(lis[0]))    
+        day = day + month_days(m , isleap(int(lis[2])))
+day = day + (month_days(m , isleap(int(lis[2]))) - int(lis[0]))    
 
 print(f"{name}'s age is {int(month/12)} years.")
 print(f"In months : {month} months")
